@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@mipmap/bg"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@mipmap/logo"
+                />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户登录"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:layout_marginTop="50dp"
+            android:id="@+id/loginname"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_round"
+            android:drawableLeft="@mipmap/name"
+            android:drawablePadding="15dp"
+            android:hint="请输入用户名"
+            android:paddingLeft="15dp"
+            android:textColor="#222222"
+            android:textColorHint="#A4A6A8"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_round"
+            android:drawableLeft="@mipmap/password"
+            android:drawablePadding="15dp"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:textColor="#222222"
+            android:textColorHint="#A4A6A8"
+            android:textSize="18sp"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="类别："
+                android:textColor="#222222"
+                android:textSize="18sp"
+                android:layout_weight="2"
+                />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+                <RadioButton
+                    android:id="@+id/hzRb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="患者"
+                    android:textColor="#222222"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    />
+                <RadioButton
+                    android:id="@+id/ysRb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="医生"
+                    android:textColor="#222222"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/savename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:text="保存用户名和密码"
+            android:textColor="#222222"
+            android:textSize="15sp"
+            />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_btn"
+            android:text="登 录"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_btn1"
+            android:text="注 册"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
